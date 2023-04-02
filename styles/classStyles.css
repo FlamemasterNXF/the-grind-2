@@ -1,0 +1,33 @@
+.flexBox {
+    display: flex;
+    align-items: center;
+    place-content:center
+}
+.generalTexts{
+    color: white;
+    font-family: DosisLight;
+}
+.centeredTexts{
+    color: white;
+    font-family: DosisLight;
+    text-align: center;
+}
+.layer{
+    position: absolute;
+    z-index: 1;
+}
+.row{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-direction: row;
+}
+.gen{
+    width: 10rem;
+    height: 5rem;
+    background-color: black;
+    color: gray;
+    border: 2px solid gray;
+    margin-left: 0.5rem
+}
