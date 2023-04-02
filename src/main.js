@@ -16,6 +16,7 @@ calculateGain = (i) => data.generators[i].times(data.manuals[i].plus(1))
 
 window.setInterval(function(){
     mainLoop()
+    coolerTimerThingy()
 }, 10);
 
 function coolerTimerThingy() {
@@ -35,5 +36,3 @@ function coolerTimerThingy() {
   let lookGood = data.times[1] < 10 ? '0':''
   document.getElementById("timer").innerHTML = `Current time: ${data.times[0]}:${lookGood}${data.times[1]}.${data.times[2]}`
 }
-
-setInterval(coolerTimerThingy, 10);
