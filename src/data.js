@@ -97,6 +97,6 @@ function deleteSave(){
     location.reload()
 }
 
-window.onload = function (){
-    load()
+window.onload = function () {
+    try { load() } catch(e){ console.log('New Save!\nIf you\'re seeing this, welcome :)') }
 }
